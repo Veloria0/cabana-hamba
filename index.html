@@ -20,4 +20,17 @@
 <section class="route"><img src="route-map.png" onerror="this.style.display='none'"><img src="route-original.jpg"></section>
 <section class="card"><h2 data-i18n="rulesTitle">Check-in / Check-out</h2><p><b data-i18n="checkin">Check-in:</b> 15:00</p><p><b data-i18n="checkout">Check-out:</b> 11:00</p><p data-i18n="minStay">Sejur minim: 2 nopți.</p></section>
 <section id="contact" class="contact"><h2 data-i18n="contactTitle">Contact & rezervare</h2><p data-i18n="contactText">Pentru disponibilitate și rezervări, contactează-ne direct:</p><a href="tel:+40744593504">📞 +40 744 593 504</a><a href="mailto:maziluciprian@yahoo.com">📧 maziluciprian@yahoo.com</a><a href="https://wa.me/40744593504">💬 WhatsApp</a></section>
-</main><footer>© Cabana Hamba – Sibiu</footer><script src="script.js?v=4"></script></body></html>
+</main><footer>© Cabana Hamba – Sibiu</footer><script src="script.js?v=4"></script>
+<div id="lightbox" class="lightbox" onclick="this.style.display='none'">
+    <img id="lightbox-img">
+</div>
+
+<script>
+document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', function() {
+        document.getElementById('lightbox').style.display = 'flex';
+        document.getElementById('lightbox-img').src = this.src;
+    });
+});
+</script>
+</body></html>
