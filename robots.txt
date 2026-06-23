@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://veloria0.github.io/cabana-hamba/sitemap.xml
