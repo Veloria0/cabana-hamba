@@ -42,7 +42,7 @@ const T = {
   },
   de: {
     navGallery:"Galerie", navFacilities:"Ausstattung", navActivities:"Aktivitäten", navContact:"Kontakt",
-    heroTitle:"Cabana Hamba – Sibiu",
+    heroTitle:"Poienița Soarelui – Hamba, Sibiu",
     heroSubtitle:"Beheizter Pool • Ciubăr • Kostenloses WLAN • Natur & Erholung",
     whatsapp:"Über WhatsApp buchen",
     introTitle:"Der ideale Ort für Familie und Freunde",
