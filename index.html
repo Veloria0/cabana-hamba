@@ -46,21 +46,21 @@
     <div>
       <p class="eyebrow" data-i18n="calendarEyebrow">Disponibilitate</p>
       <h2 data-i18n="calendarTitle">Calendar rezervări</h2>
-      <p class="calendar-subtitle" data-i18n="calendarText">Roșu înseamnă ocupat. Zilele fără marcaj sunt disponibile.</p>
+      <p class="calendar-subtitle" data-i18n="calendarText">Zilele marcate sunt ocupate. Zilele fără marcaj sunt libere.</p>
     </div>
     <a class="calendar-cta" href="https://wa.me/40744593504" data-i18n="calendarCta">Întreabă disponibilitatea</a>
   </div>
 
   <div class="availability-legend">
-    <span class="legend-item booked"><b></b><span data-i18n="legendBooked">Ocupat / rezervat</span></span>
-    <span class="legend-item free"><b></b><span data-i18n="legendFree">Disponibil</span></span>
+    <span class="legend-item booked"><b></b><span data-i18n="legendBooked">Marcat = ocupat / rezervat</span></span>
+    <span class="legend-item free"><b></b><span data-i18n="legendFree">Fără marcaj = liber</span></span>
   </div>
 
   <div class="calendar-frame">
     <iframe src="https://calendar.google.com/calendar/embed?src=104c96f9235f1b1cd6613fd85fffd85c7b160edade5811dea3d9844e6ad85a69%40group.calendar.google.com&ctz=Europe%2FBerlin" style="border:0" width="100%" height="420" frameborder="0" scrolling="no"></iframe>
   </div>
 
-  <p class="calendar-small" data-i18n="calendarNote">Calendarul este actualizat de administratorii proprietății.</p>
+  <p class="calendar-small" data-i18n="calendarNote">În calendar sunt trecute doar perioadele ocupate. Zilele fără evenimente sunt disponibile.</p>
 </section>
 
 <section id="contact" class="contact"><h2 data-i18n="contactTitle">Contact & rezervare</h2><p data-i18n="contactText">Pentru disponibilitate și rezervări, contactează-ne direct:</p><a href="tel:+40744593504">📞 +40 744 593 504</a><a href="mailto:maziluciprian@yahoo.com">📧 maziluciprian@yahoo.com</a><a href="https://wa.me/40744593504">💬 WhatsApp</a></section>
@@ -78,6 +78,7 @@ document.querySelectorAll('.gallery img').forEach(img => {
 });
 </script>
 
+
 <script>
 (function(){
 const calendarTranslations={
@@ -85,31 +86,31 @@ ro:{
   navCalendar:"Calendar",
   calendarEyebrow:"Disponibilitate",
   calendarTitle:"Calendar rezervări",
-  calendarText:"Roșu înseamnă ocupat. Zilele fără marcaj sunt disponibile.",
-  legendBooked:"Ocupat / rezervat",
-  legendFree:"Disponibil",
+  calendarText:"Zilele marcate sunt ocupate. Zilele fără marcaj sunt libere.",
+  legendBooked:"Marcat = ocupat / rezervat",
+  legendFree:"Fără marcaj = liber",
   calendarCta:"Întreabă disponibilitatea",
-  calendarNote:"Calendarul este actualizat de administratorii proprietății."
+  calendarNote:"În calendar sunt trecute doar perioadele ocupate. Zilele fără evenimente sunt disponibile."
 },
 en:{
   navCalendar:"Calendar",
   calendarEyebrow:"Availability",
   calendarTitle:"Booking calendar",
-  calendarText:"Red means booked. Days without a mark are available.",
-  legendBooked:"Booked / unavailable",
-  legendFree:"Available",
+  calendarText:"Marked days are booked. Days without a mark are available.",
+  legendBooked:"Marked = booked / unavailable",
+  legendFree:"No marking = available",
   calendarCta:"Ask availability",
-  calendarNote:"The calendar is updated by the property managers."
+  calendarNote:"Only booked periods are shown in the calendar. Days without events are available."
 },
 de:{
   navCalendar:"Kalender",
   calendarEyebrow:"Verfügbarkeit",
   calendarTitle:"Buchungskalender",
-  calendarText:"Rot bedeutet belegt. Tage ohne Markierung sind verfügbar.",
-  legendBooked:"Besetzt / reserviert",
-  legendFree:"Frei",
+  calendarText:"Markierte Tage sind belegt. Tage ohne Markierung sind frei.",
+  legendBooked:"Markiert = besetzt / reserviert",
+  legendFree:"Keine Markierung = frei",
   calendarCta:"Verfügbarkeit anfragen",
-  calendarNote:"Der Kalender wird von den Verwaltern der Unterkunft aktualisiert."
+  calendarNote:"Im Kalender werden nur belegte Zeiträume eingetragen. Tage ohne Termine sind verfügbar."
 }
 };
 function applyCalendarLanguage(lang){
